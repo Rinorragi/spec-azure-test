@@ -12,6 +12,26 @@
 - **GitHub Actions** - Use GitHub Actions for all CI/CD pipelines
 - Use Azure Deployment Stacks over normal deployments
 
+## Git Workflow
+
+### Branch Strategy
+- **Always create a new branch** for any new work, feature, or fix
+- Use descriptive branch names following the pattern: `feature/`, `fix/`, `chore/`, or `docs/` prefix
+- Examples: `feature/add-apim-bicep`, `fix/function-binding-error`, `chore/update-dependencies`
+- Never commit directly to `main` branch
+
+### Pull Requests
+- **Automatically create a pull request** after completing work on a branch
+- Include a clear title describing the change
+- Add a description explaining what was changed and why
+- Link related issues if applicable
+- Request review when appropriate
+
+### Commit Messages
+- Use clear, descriptive commit messages
+- Follow conventional commit format when possible: `type(scope): description`
+- Examples: `feat(bicep): add APIM module`, `fix(functions): correct binding configuration`
+
 ## Azure Development Guidelines
 
 ### CLI Preference
