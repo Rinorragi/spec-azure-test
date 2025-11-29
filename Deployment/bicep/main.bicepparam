@@ -7,7 +7,7 @@ param publisherName = 'Contoso'
 // Optional parameters with defaults
 param environmentName = 'dev'
 param baseName = 'apimfunc'
-param location = 'northeurope'
+param location = 'swedencentral'
 
 param tags = {
   Environment: 'dev'
