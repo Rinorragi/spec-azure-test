@@ -19,6 +19,7 @@
 - Use descriptive branch names following the pattern: `feature/`, `fix/`, `chore/`, or `docs/` prefix
 - Examples: `feature/add-apim-bicep`, `fix/function-binding-error`, `chore/update-dependencies`
 - Never commit directly to `main` branch
+- **Do not automatically create pull requests** - the developer will handle PR creation manually
 
 ### Commit Messages
 - Use clear, descriptive commit messages
