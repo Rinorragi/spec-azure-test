@@ -20,13 +20,6 @@
 - Examples: `feature/add-apim-bicep`, `fix/function-binding-error`, `chore/update-dependencies`
 - Never commit directly to `main` branch
 
-### Pull Requests
-- **Automatically create a pull request** after completing work on a branch
-- Include a clear title describing the change
-- Add a description explaining what was changed and why
-- Link related issues if applicable
-- Request review when appropriate
-
 ### Commit Messages
 - Use clear, descriptive commit messages
 - Follow conventional commit format when possible: `type(scope): description`
