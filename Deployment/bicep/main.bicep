@@ -77,7 +77,7 @@ module appServicePlan 'br/public:avm/res/web/serverfarm:0.3.0' = {
     name: appServicePlanName
     location: location
     tags: tags
-    kind: 'functionapp'
+    kind: 'FunctionApp'
     skuName: 'Y1'
     skuCapacity: 0
   }
@@ -105,18 +105,9 @@ module functionApp 'br/public:avm/res/web/site:0.12.0' = {
       minTlsVersion: '1.2'
       use32BitWorkerProcess: false
     }
-    configs: [
-      {
-        name: 'appsettings'
-        storageAccountResourceId: storageAccount.outputs.resourceId
-        storageAccountUseIdentityAuthentication: true
-        properties: {
-          FUNCTIONS_EXTENSION_VERSION: '~4'
-          FUNCTIONS_WORKER_RUNTIME: 'dotnet-isolated'
-          WEBSITE_RUN_FROM_PACKAGE: '1'
-        }
-      }
-    ]
+    storageAccountResourceId: storageAccount.outputs.resourceId
+    storageAccountUseIdentityAuthentication: true
+
     basicPublishingCredentialsPolicies: [
       {
         name: 'ftp'
